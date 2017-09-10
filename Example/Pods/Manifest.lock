@@ -1,11 +1,11 @@
 PODS:
-  - LQDownloadManager (0.0.2)
+  - LQDownloadManager (0.0.3)
 
 DEPENDENCIES:
   - LQDownloadManager
 
 SPEC CHECKSUMS:
-  LQDownloadManager: 947f29bf5fc0d50e6caeeb5f5f379698b190cb6a
+  LQDownloadManager: 7481829f785b86ccaffff65abbb34aed64bd930a
 
 PODFILE CHECKSUM: c6f9865018ea33e7e0dc37b447f3e79e6256c809
 

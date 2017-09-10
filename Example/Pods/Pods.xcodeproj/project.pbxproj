@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1322F4E4555004E759D983D4C33CAB6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		41A9C7FBA9C49EF0A40FFA55719CD4A2 /* LQDownloadManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1608C4D80A0607CB4F92796FAF02BBD3 /* LQDownloadManager-dummy.m */; };
-		47FC6F24F66A3CBD43B15FF67C5C5500 /* LQDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67735C7481CB190455CD4F9748F2F672 /* LQDownloadManager.swift */; };
-		6524CD8ADAD104AA53D330A7F514D7DA /* LQDownloadManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD2F427919607EDD3F2E965A41C1884 /* LQDownloadManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41A9C7FBA9C49EF0A40FFA55719CD4A2 /* LQDownloadManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E1C30E911F434720F48E13379CE3 /* LQDownloadManager-dummy.m */; };
+		6524CD8ADAD104AA53D330A7F514D7DA /* LQDownloadManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6590488F4E44287CB93EFF38CAA3EDBA /* LQDownloadManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DAC88346AA9CDFCDC3B2C48C83E91AF /* Pods-LQDownload-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 565A3B6A201D9D2FB49B91174CCD789D /* Pods-LQDownload-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A27B440FB111FF82620F1112572A8776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		AD660CDD6E211FFAF53004E9AED08A2E /* LQDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE120348AC07B988E4DFF7916543A9E /* LQDownloadManager.swift */; };
 		C2E9322971473496F46334BF54D99EFA /* Pods-LQDownload-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF31E6B9BB8A7177DEEC46C2D13EF9B /* Pods-LQDownload-dummy.m */; };
 		E80D3635266237A190ABFE2C876FD536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -28,26 +28,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1608C4D80A0607CB4F92796FAF02BBD3 /* LQDownloadManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LQDownloadManager-dummy.m"; sourceTree = "<group>"; };
 		1D8AAE0ECE6BFEEDC19F71456521F9FB /* Pods-LQDownload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LQDownload.debug.xcconfig"; sourceTree = "<group>"; };
 		2A2FE6084C63E3245F6508E1F2721B76 /* Pods_LQDownload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LQDownload.framework; path = "Pods-LQDownload.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		365B3560AD70D83FEC0AADBE62552104 /* LQDownloadManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LQDownloadManager.modulemap; sourceTree = "<group>"; };
+		4418DE4E36FE963679C4338228BC70D4 /* LQDownloadManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LQDownloadManager-prefix.pch"; sourceTree = "<group>"; };
 		46FB0F2E03424A721F35094EA22F96EF /* Pods-LQDownload-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LQDownload-acknowledgements.markdown"; sourceTree = "<group>"; };
 		565A3B6A201D9D2FB49B91174CCD789D /* Pods-LQDownload-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LQDownload-umbrella.h"; sourceTree = "<group>"; };
+		5AE120348AC07B988E4DFF7916543A9E /* LQDownloadManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LQDownloadManager.swift; path = LQDownloadManager/LQDownloadManager.swift; sourceTree = "<group>"; };
 		5E29425CF86EE58CE9BEA6B9A5604DD3 /* Pods-LQDownload.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LQDownload.modulemap"; sourceTree = "<group>"; };
 		5FD05F7019DFC7BE25326021A4E0A5DD /* Pods-LQDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LQDownload.release.xcconfig"; sourceTree = "<group>"; };
-		63BD0A354461A1313460A875D93DED62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67735C7481CB190455CD4F9748F2F672 /* LQDownloadManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LQDownloadManager.swift; path = LQDownload/LQDownloadManager/LQDownloadManager.swift; sourceTree = "<group>"; };
+		6590488F4E44287CB93EFF38CAA3EDBA /* LQDownloadManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LQDownloadManager-umbrella.h"; sourceTree = "<group>"; };
+		68D80C2D16D4CBC78760455E9928CB38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D092F06C0781923CB78062EC3D6E845 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7670E2F1716C0FF1001B607841A685C3 /* LQDownloadManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LQDownloadManager-prefix.pch"; sourceTree = "<group>"; };
-		7B6E4B0EE943A79307C6D232755646E4 /* LQDownloadManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LQDownloadManager.xcconfig; sourceTree = "<group>"; };
+		78C190EDA2FD5D02E7FF0968DF39A94D /* LQDownloadManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LQDownloadManager.xcconfig; sourceTree = "<group>"; };
 		8FD77FB79E23961F90F86D7539D01E3F /* LQDownloadManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LQDownloadManager.framework; path = LQDownloadManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B1E52EFBE9A231CE1384545DD0B3269 /* Pods-LQDownload-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LQDownload-resources.sh"; sourceTree = "<group>"; };
 		9DE56042DBB64D82207CF241F38D224A /* Pods-LQDownload-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LQDownload-acknowledgements.plist"; sourceTree = "<group>"; };
+		AABAF987B56079DF9A4E3DEDF0113510 /* LQDownloadManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LQDownloadManager.modulemap; sourceTree = "<group>"; };
+		ACF5E1C30E911F434720F48E13379CE3 /* LQDownloadManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LQDownloadManager-dummy.m"; sourceTree = "<group>"; };
 		ADCFF6072A92740FB402D2A7B44E7892 /* Pods-LQDownload-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LQDownload-frameworks.sh"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BDD2F427919607EDD3F2E965A41C1884 /* LQDownloadManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LQDownloadManager-umbrella.h"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FEF31E6B9BB8A7177DEEC46C2D13EF9B /* Pods-LQDownload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LQDownload-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,18 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EC81B8F4C0802C2C411BA75D2B12570 /* Support Files */ = {
+		42D2190E071CA402C11C95A32C243A7E /* LQDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
-				63BD0A354461A1313460A875D93DED62 /* Info.plist */,
-				365B3560AD70D83FEC0AADBE62552104 /* LQDownloadManager.modulemap */,
-				7B6E4B0EE943A79307C6D232755646E4 /* LQDownloadManager.xcconfig */,
-				1608C4D80A0607CB4F92796FAF02BBD3 /* LQDownloadManager-dummy.m */,
-				7670E2F1716C0FF1001B607841A685C3 /* LQDownloadManager-prefix.pch */,
-				BDD2F427919607EDD3F2E965A41C1884 /* LQDownloadManager-umbrella.h */,
+				5AE120348AC07B988E4DFF7916543A9E /* LQDownloadManager.swift */,
+				D7EDE971FDDBBEC9C1EE721A47451EC5 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/LQDownloadManager";
+			name = LQDownloadManager;
+			path = LQDownloadManager;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -125,19 +121,9 @@
 		50AD810A8D17169F2B16F0023B475999 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C367546C7F93B7C1C5E2CB0BF7DE3CB /* LQDownloadManager */,
+				42D2190E071CA402C11C95A32C243A7E /* LQDownloadManager */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		7C367546C7F93B7C1C5E2CB0BF7DE3CB /* LQDownloadManager */ = {
-			isa = PBXGroup;
-			children = (
-				67735C7481CB190455CD4F9748F2F672 /* LQDownloadManager.swift */,
-				1EC81B8F4C0802C2C411BA75D2B12570 /* Support Files */,
-			);
-			name = LQDownloadManager;
-			path = LQDownloadManager;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -158,6 +144,20 @@
 				2A2FE6084C63E3245F6508E1F2721B76 /* Pods_LQDownload.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D7EDE971FDDBBEC9C1EE721A47451EC5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68D80C2D16D4CBC78760455E9928CB38 /* Info.plist */,
+				AABAF987B56079DF9A4E3DEDF0113510 /* LQDownloadManager.modulemap */,
+				78C190EDA2FD5D02E7FF0968DF39A94D /* LQDownloadManager.xcconfig */,
+				ACF5E1C30E911F434720F48E13379CE3 /* LQDownloadManager-dummy.m */,
+				4418DE4E36FE963679C4338228BC70D4 /* LQDownloadManager-prefix.pch */,
+				6590488F4E44287CB93EFF38CAA3EDBA /* LQDownloadManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LQDownloadManager";
 			sourceTree = "<group>";
 		};
 		FCE82904ED74D682E4D38718F3B26A5C /* Targets Support Files */ = {
@@ -258,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A9C7FBA9C49EF0A40FFA55719CD4A2 /* LQDownloadManager-dummy.m in Sources */,
-				47FC6F24F66A3CBD43B15FF67C5C5500 /* LQDownloadManager.swift in Sources */,
+				AD660CDD6E211FFAF53004E9AED08A2E /* LQDownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +416,7 @@
 		};
 		85494B19871715AA4A23B8DFBE65F4FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B6E4B0EE943A79307C6D232755646E4 /* LQDownloadManager.xcconfig */;
+			baseConfigurationReference = 78C190EDA2FD5D02E7FF0968DF39A94D /* LQDownloadManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -451,7 +451,7 @@
 		};
 		8C74B4485F84E3E38C03B3D4101C7920 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B6E4B0EE943A79307C6D232755646E4 /* LQDownloadManager.xcconfig */;
+			baseConfigurationReference = 78C190EDA2FD5D02E7FF0968DF39A94D /* LQDownloadManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
