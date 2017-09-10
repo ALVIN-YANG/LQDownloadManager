@@ -44,7 +44,8 @@ LQDownloadManager.shared.download("#download file url string#", progress: { prog
 ## Contact me
 
 Email: ylq.win@gmail.com
-weibo: [青木KON] (http://weibo.com/5012041775/profile?topnav=1&wvr=6&is_all=1)
+<br/>
+weibo: [青木KON](http://weibo.com/5012041775/profile?topnav=1&wvr=6&is_all=1)
 
 ## License
 
