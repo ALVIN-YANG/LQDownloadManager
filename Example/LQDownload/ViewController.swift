@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import LQDownloadManager
 
 class ViewController: UIViewController {
-
+  
   // 进度条
   fileprivate lazy var progressView: UIProgressView = {
     let screen = UIScreen.main.bounds
@@ -21,7 +22,7 @@ class ViewController: UIViewController {
     return progressView
   }()
   
-  // 下载按钮 
+  // 下载按钮
   fileprivate lazy var downloadButton: UIButton = {
     let button = UIButton()
     button.setTitle("开始下载", for: .normal)
@@ -55,23 +56,16 @@ class ViewController: UIViewController {
   
   let urlString = "https://itunesconnect.apple.com/apploader/ApplicationLoader_3.0.dmg"
   
-	override func viewDidLoad() {
-		super.viewDidLoad()
-    
-    if let totalSize = LQDownloadManager.shared.fileTotalSize(urlString) {
-      let downloadedSize = LQDownloadManager.shared.fileDownloadSize(urlString)
-      
-      progressView.progress = Float(downloadedSize)/Float(totalSize)
-    }
-    
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
     view.addSubview(progressView)
     view.addSubview(downloadButton)
     view.addSubview(cancelButton)
     
-		debugPrint("\(LQDownloadManager.shared.downloadDirectory())")
-	}
-
+    debugPrint("\(LQDownloadManager.shared.downloadDirectory())")
+  }
+  
 }
 
 extension ViewController {

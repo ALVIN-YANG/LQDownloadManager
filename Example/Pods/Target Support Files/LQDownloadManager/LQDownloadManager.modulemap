@@ -1,0 +1,6 @@
+framework module LQDownloadManager {
+  umbrella header "LQDownloadManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
