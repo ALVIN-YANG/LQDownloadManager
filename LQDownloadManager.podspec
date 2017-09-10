@@ -16,15 +16,15 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LQDownloadManager"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "iOS download manager, support background mode."
   s.homepage     = "https://github.com/ALVIN-YANG/LQDownloadManager"
   s.license      = "MIT"
   s.author       = { "ALVIN-YANG" => "ylq.win@gmail.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/ALVIN-YANG/LQDownloadManager.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/ALVIN-YANG/LQDownloadManager.git", :tag => "0.0.3" }
   s.framework  = "UIKit"
-  s.source_files  = "LQDownload/LQDownloadManager/*"
+  s.source_files  = "LQDownloadManager/*"
 
 
 end
