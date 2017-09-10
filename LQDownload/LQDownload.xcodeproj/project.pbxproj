@@ -12,7 +12,7 @@
 		1B617E061E1FF1E8000E2101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B617E041E1FF1E8000E2101 /* Main.storyboard */; };
 		1B617E081E1FF1E8000E2101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B617E071E1FF1E8000E2101 /* Assets.xcassets */; };
 		1B617E0B1E1FF1E8000E2101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B617E091E1FF1E8000E2101 /* LaunchScreen.storyboard */; };
-		DA65DAC61F62E8CA0082403E /* LQDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA65DAC51F62E8CA0082403E /* LQDownloadManager.swift */; };
+		DADF81451F6529CB00FC4537 /* LQDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF81441F6529CB00FC4537 /* LQDownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		1B617E071E1FF1E8000E2101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B617E0A1E1FF1E8000E2101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B617E0C1E1FF1E8000E2101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA65DAC51F62E8CA0082403E /* LQDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQDownloadManager.swift; sourceTree = "<group>"; };
+		DADF81441F6529CB00FC4537 /* LQDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LQDownloadManager.swift; path = LQDownloadManager/LQDownloadManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				1B617E001E1FF1E8000E2101 /* AppDelegate.swift */,
 				1B617E021E1FF1E8000E2101 /* ViewController.swift */,
-				DA65DAC51F62E8CA0082403E /* LQDownloadManager.swift */,
+				DADF81441F6529CB00FC4537 /* LQDownloadManager.swift */,
 				1B617E041E1FF1E8000E2101 /* Main.storyboard */,
 				1B617E071E1FF1E8000E2101 /* Assets.xcassets */,
 				1B617E091E1FF1E8000E2101 /* LaunchScreen.storyboard */,
@@ -142,7 +142,7 @@
 			files = (
 				1B617E031E1FF1E8000E2101 /* ViewController.swift in Sources */,
 				1B617E011E1FF1E8000E2101 /* AppDelegate.swift in Sources */,
-				DA65DAC61F62E8CA0082403E /* LQDownloadManager.swift in Sources */,
+				DADF81451F6529CB00FC4537 /* LQDownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SPXQYPSCZ5;
 				INFOPLIST_FILE = LQDownload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ylq.LQDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SPXQYPSCZ5;
 				INFOPLIST_FILE = LQDownload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ylq.LQDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
