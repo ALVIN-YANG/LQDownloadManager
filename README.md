@@ -25,18 +25,27 @@ pod "LQDownloadManager"
 ## Usage
 
 ```swift
-LQDownloadManager.shared.download("#download file url string#", progress: { progress in
+LQDownloadManager.shared.download("#download file url string#", progress: { 
+  progress in
+  
       print("progress: \(progress)")
-    }) { status in
+      
+  }) { 
+    status in
+ 
       switch status {
       case .start:
-        ...
+      
+        // ...
       case .suspend:
-        ...
+      
+       // ...
       case .complete:
-        ...
+      
+       // ...
       case .failed:
-        ...
+      
+       // ...
       }
     }
 ```
