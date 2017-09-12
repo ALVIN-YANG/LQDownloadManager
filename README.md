@@ -49,6 +49,6 @@ weibo: [青木KON](http://weibo.com/5012041775/profile?topnav=1&wvr=6&is_all=1)
 
 ## License
 
-MarkyMark is available under the MIT license. See the LICENSE file for more info.
+LQDownloadManager is available under the MIT license. See the LICENSE file for more info.
 
 
