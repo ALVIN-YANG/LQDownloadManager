@@ -30,6 +30,8 @@ open class LQDownloadManager: NSObject {
   
   public static let shared = LQDownloadManager()
   
+  public var directoryComponent = "/Documents/Download"
+  public var totalLengthComponent = "/Documents/Download/totalLength.plist"
   
   var session = URLSession()
   
@@ -208,7 +210,7 @@ extension LQDownloadManager {
   
   //下载路径: 重新下载或者重新生成的数据放在/Documents/TTDownload里面
   public func downloadDirectory() -> String {
-    let path = NSHomeDirectory() + "/Documents/TTDownload"
+    let path = NSHomeDirectory() + directoryComponent
     if !FileManager.default.fileExists(atPath: path) {
       try! FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
     }
@@ -229,7 +231,7 @@ extension LQDownloadManager {
   //存储文件总长度.plist的文件路径
   func totalLengthFullPath() -> String{
     
-    let path = NSHomeDirectory() + "/Documents/totalLength.plist"
+    let path = NSHomeDirectory() + totalLengthComponent
     if !FileManager.default.fileExists(atPath: path) {
       FileManager.default.createFile(atPath: path, contents: nil, attributes: nil)
     }

@@ -14,12 +14,12 @@ LQDownloadManager is a download manager in Swift, support background mode.
 
 ## Installation
 
-CocoaPods 1.0.0+ is required to build MarkyMark
+CocoaPods 1.0.0+ is required to build LQDownloadManager
 
 To integrate LQDownloadManager into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'LQDownloadManager'
+pod "LQDownloadManager"
 ```
 
 ## Usage

@@ -33,15 +33,10 @@ open class LQDownloadManager: NSObject {
   public var directoryComponent = "/Documents/Download"
   public var totalLengthComponent = "/Documents/Download/totalLength.plist"
   
-  var session = URLSession()
+  fileprivate lazy var session = URLSession()
   
   var onGoingDownloads = [String: LQDownloadModel]()
   
-  public override init() {
-    super.init()
-    let configuration = URLSessionConfiguration.default
-    self.session = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
-  }
 }
 
 /// session delegate
@@ -129,7 +124,9 @@ extension LQDownloadManager: URLSessionDownloadDelegate, URLSessionDataDelegate 
     
   }
   
-  
+  public func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
+    
+  }
   
 }
 
@@ -159,6 +156,8 @@ extension LQDownloadManager {
       return
     }
     
+    session = createBackgroundSession()
+    
     let downloadTask = session.downloadTask(with: url)
     let downloadModel = LQDownloadModel(url: urlString, downloadTask: downloadTask, progressBlock: progress, completeBlock: completeBlock, fileExpectedSize: nil)
     
@@ -181,6 +180,11 @@ extension LQDownloadManager {
     try? FileManager.default.removeItem(atPath: fileFullPath(urlString))
   }
   
+  // 删除对应的文件
+  public func deleteDownloadFile(_ urlString: String) {
+    try? FileManager.default.removeItem(atPath: fileFullPath(urlString))
+  }
+  
   //判断该资源是否下载完成
   public func isComplate(_ url: String) -> Bool {
     guard let size = fileTotalSize(url) else { return false }
@@ -193,6 +197,25 @@ extension LQDownloadManager {
 
 /// Utils
 extension LQDownloadManager {
+  
+  
+  /// Create a Background Session
+  func createBackgroundSession() -> URLSession {
+    let nowDate = Date()
+    
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "YYYYMMddHHMMSS"
+    let dateStr =  dateFormatter.string(from: nowDate)
+    
+    let randomNum = Int(arc4random()%10000)+1
+    
+    let configrationIdentifier =  "test" + dateStr + String(randomNum)
+    
+    
+    let backgroundSessionConfigration = URLSessionConfiguration.background(withIdentifier: configrationIdentifier)
+    
+    return URLSession(configuration: backgroundSessionConfigration, delegate: self, delegateQueue: OperationQueue.main)
+  }
   
   //文件名
   func fileName(_ url: String) -> String {
