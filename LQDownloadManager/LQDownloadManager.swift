@@ -140,7 +140,7 @@ extension LQDownloadManager {
     completeBlock: @escaping (LQDownloadState) -> Void
     ) {
     
-    if isComplate(urlString) {
+    if isComplete(urlString) {
       completeBlock(.complete)
       debugPrint("(￣.￣)该资源已下载完成")
       return
@@ -186,7 +186,7 @@ extension LQDownloadManager {
   }
   
   //判断该资源是否下载完成
-  public func isComplate(_ url: String) -> Bool {
+  public func isComplete(_ url: String) -> Bool {
     guard let size = fileTotalSize(url) else { return false }
     if size == fileDownloadSize(url) {
       return true
