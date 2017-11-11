@@ -25,7 +25,7 @@ open class LQDownloadManager: NSObject {
     var downloadTask: URLSessionDownloadTask
     var progressBlock: (CGFloat) -> Void
     var completeBlock: (LQDownloadState) -> Void
-    var fileExpectedSize: Int?
+    var fileExpectedSize: Int64?
   }
   
   public static let shared = LQDownloadManager()
@@ -107,13 +107,13 @@ extension LQDownloadManager: URLSessionDownloadDelegate, URLSessionDataDelegate 
     //存储总长度
     if downloadModel.fileExpectedSize == nil {
       
-      downloadModel.fileExpectedSize = Int(totalBytesExpectedToWrite)
+      downloadModel.fileExpectedSize = Int64(totalBytesExpectedToWrite)
       
       var dict = NSMutableDictionary(contentsOf: URL(fileURLWithPath: totalLengthFullPath()))
       if dict == nil {
         dict = NSMutableDictionary()
       }
-      dict?[fileName(urlString)] = Int(totalBytesExpectedToWrite)
+      dict?[fileName(urlString)] = Int64(totalBytesExpectedToWrite)
       dict?.write(toFile: totalLengthFullPath(), atomically: true)
     }
     
@@ -242,10 +242,10 @@ extension LQDownloadManager {
   }
   
   //获取对应资源的大小: 大小存储在totalLength.plist, key为url
-  public func fileTotalSize(_ url: String) -> Int? {
+  public func fileTotalSize(_ url: String) -> Int64? {
     if let data = try? Data(contentsOf: URL(fileURLWithPath: totalLengthFullPath())){
       if let result = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any] {
-        return result?[fileName(url)] as? Int
+        return result?[fileName(url)] as? Int64
       }
     }
     return nil
@@ -263,12 +263,12 @@ extension LQDownloadManager {
   }
   
   //文件已下载大小
-  func fileDownloadSize(_ url: String) -> Int {
-    var filesize: Int?
+  func fileDownloadSize(_ url: String) -> Int64 {
+    var filesize: Int64?
     
     do {
       let attr = try FileManager.default.attributesOfItem(atPath: fileFullPath(url))
-      filesize = attr[FileAttributeKey.size] as? Int
+      filesize = attr[FileAttributeKey.size] as? Int64
     } catch {
       return 0
     }
